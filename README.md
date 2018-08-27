@@ -8,7 +8,7 @@ brew install pdflatex pandoc
 
 ## Step 2 - Edit markdown
 
-Source markdown: https://github.com/lukastymo/cv/blob/master/src/resume.md
+Edit CV markdown as you want: https://github.com/lukastymo/cv/blob/master/src/resume.md
 
 ## Step 3 - Generate
 
