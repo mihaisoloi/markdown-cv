@@ -18,4 +18,4 @@ Generate PDF:
 ./bin/generate.sh
 ```
 
-The CV is generated in `final/` folder
+The CV is generated in `final/` folder.
