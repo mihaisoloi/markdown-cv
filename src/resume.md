@@ -3,7 +3,7 @@ title: Resume
 layout: post
 ---
 
-I'm a Scala / Data Engineer with over 10 years' experience. I inspire and help teams in being productive. I love mathematics and algorithms.
+I'm a Scala / Data Engineer with over ten years' experience. I inspire and help teams in being productive. I love mathematics and algorithms.
 
 I'm goal oriented, proactive and able to work remotely, with outstanding communications skills.
 
@@ -49,9 +49,9 @@ September 2017 -- May 2018, London, UK
 
 * I was part of the team which implemented very popular, and in-demand project required transforming significant amount of raw market data into FRTB-compliant risk factors and scenarios by using DSL language for risk modelling.
 
-* I productionized Spark application on AWS (S3, EC2, EMR) with strong automatization requirement via Ansible and CloudFormation. Due to this change deployment across environments was consistent and automated so everybody in the team could do this by clicking one button in Jenkins.
+* I productionized Spark application on AWS (S3, EC2, EMR) with strong automatization requirement via Ansible and CloudFormation. Due to this change deployment across environments was consistent and automated so everybody on the team could do this by clicking one button in Jenkins.
 
-* I helped developing functional Scala project, which main module was a custom DSL language used by Quants. Thanks to this feature our quants were able to produce FRTB solutions presented for multiple banks.
+* I helped developing functional Scala project, which the main module was a custom DSL language used by Quants. Thanks to this feature our quants were able to produce FRTB solutions presented for multiple banks.
 
 Tech stack:
 
@@ -69,9 +69,9 @@ Tech stack:
 _OVO Energy | vCharge_<br/>
 April 2017 -- September 2017, London, UK
 
-* vCharge was a startup acquired by Ovo Energy. The idea was to control storage heaters installed in people homes. I closely worked with the owner who was located in the US (~everyday one-to-one online meetings). I had high impact on stakeholders. Throughout couple of months I was the only Scala developer.
+* vCharge was a startup acquired by Ovo Energy. The idea was to control storage heaters installed in people homes. I worked with the owner who was located in the US (~ daily one-to-one online meetings). I had a high impact on stakeholders. Throughout a couple of months, I was the only Scala developer.
 
-* I built a module to forecasting Energy prices using Dijkstra algorithm and mathematical model created by Data Scientists. It allowed to buy energy cheaper and "store" in the customers storage heaters.
+* I built a module to forecasting Energy prices using the Dijkstra algorithm and mathematical model created by Data Scientists. It allowed buying energy cheaper and "store" in the customers' storage heaters.
 
 Tech Stack:
 
@@ -119,14 +119,14 @@ November 2010 -- August 2013, Krakow, Poland
 
 * I helped in developing web-based, highly configurable booking application for numerous airlines.
 
-* I proposed and implemented speeding up everyday development by recording a web state to disk. A tester could persist current state of the application and a developer could retrieve it at any time, at any moment – saving time and reproducing some nasty bugs in a second.
+* I proposed and implemented speeding up development by recording a web state to disk. A tester could persist the current state of the application, and a developer could retrieve it at any time, at any moment – saving time and reproducing some nasty bugs in a second.
 
 Tech stack:
 
 - Java 5 / 6
 - Spring Core, MVC, Webflow
 - JavaScript, JSP
-- TDD, Continuous Integration, Object Oriented Programming, SOLID
+- TDD, Continuous Integration, Object-Oriented Programming, SOLID
 
 ### Full stack Java Developer
 
@@ -147,10 +147,13 @@ M.S., Computer Science, Jagiellonian University, 2005 - 2010, Krakow, Poland
 
 ### Projects
 
-- appointary.com
-- stepstoyourhome.co.uk
-- www.lukastymo.com/inc/blog
+- [`appointary.com`][appointary]
+- [`stepstoyourhome.co.uk`][steps]
+- [`www.lukastymo.com/inc/blog`][blog]
 
 [github]: https://github.com/lukastymo
 [stackoverflow]: https://stackoverflow.com/users/574799/smas
 [codeforces]: https://codeforces.com/profile/smas
+[appointary]: https://appointary.com
+[steps]: http://stepstoyourhome.co.uk
+[blog]: http://www.lukastymo.com/inc/blog
