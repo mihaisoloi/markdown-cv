@@ -1,4 +1,4 @@
-# cv
+# Lukasz - CV
 
 Source markdown: https://github.com/lukastymo/cv/blob/master/src/resume.md
 
