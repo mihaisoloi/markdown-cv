@@ -1,18 +1,9 @@
 # cv
 
-To generate CV I use markdown, and I generate the CV to PDF / TEX
+Source markdown: https://github.com/lukastymo/cv/blob/master/src/resume.md
 
-This plugin: https://github.com/prat0318/json_resume
+Generate PDF:
 
 ```
-json_resume sample
-
-json_resume convert --out=tex prateek_cv.json
+./bin/generate.sh
 ```
-
-the best cvs:
-
-https://www.willangley.org/images/2017-02-28-resume.pdf
-
-https://www.willangley.org/2017/02/28/send-me-your-resume.html
-
