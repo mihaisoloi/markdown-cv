@@ -3,113 +3,154 @@ title: Resume
 layout: post
 ---
 
-### Software Engineer
+I'm a Scala / Data Engineer with over 10 years' experience. I inspire and help teams in being productive. I love mathematics and algorithms.
 
-_Google Fiber_<br/>
-November 2014 -- February 2017, New York City
+I'm goal oriented, proactive and able to work remotely, with outstanding communications skills.
 
-* Lead engineering of Fiber-managed WiFi guest networks for apartment
-  buildings and small businesses. Adapted autoprovisioning software to go from
-  idea to pilot in three months. Handled communication with product management,
-  sales, and property managers in the pilot deployment.
+My business domain: Machine Learning (2018), Finance, Risk Management FRTB, MIFID, Basel: 5 years (2008 - 2010, 2013 - 2015, 2018), Energy industry: Energy price forecasting (2017), Public sector: Automatic recruitment (2016), Airline (2010 - 2013).
 
-* Develop autoprovisioning software that allows newly powered up TV boxes to
-  learn their own WiFi configuration and start playing TV immediately.
+Info:
 
-* Secure autoprovisioning and guest networks so customers can use them safely,
-  with [`minijail`][minijail] to contain server processes and `tc` to let
-  roaming TV boxes drop unsolicited traffic cheaply.
+- [`github.com/lukastymo`][github]
+- [`stackoverflow.com/users/574799/smas`][stackoverflow] (top 2%)
+- [`codeforces.com/profile/smas`][codeforces]
 
-* Adapt the [`isostream`][isostream] network measurement tool to simulate
-  high-definition wireless TV streams. Deployed this simulation to Fiber TV
-  subscribers, found sufficient bandwidth for wireless TV and critical WiFi
-  driver bugs. After fixes shipped, used simulation to verify them in the field.
+Technical experience:
 
-* Run an ongoing [dogfood][dogfood] for the Google Fiber wifi router in 20%
-  time. Set up 300 tech and business Googlers with routers, moderated a mailing
-  list to stay in touch with them, and investigated and resolved issues that
-  came up. Automated orders so I could do this part time; without automation
-  running a dogfood this size is a full-time job.
+- Scala, Functional Programming, Java, JVM
+- Agile Development practices: CI/CD, TDD, PP, Code Review
+- Machine Learning, Python / Jupyter Notebook
+- Big Data: Apache Spark (development and tuning), ETL, SQL
+- Distributed Systems: Akka, Microservices, NoSQL, The Twelve-Factor App
+- DevOps & Cloud: AWS, Google Cloud Platform, Azure, Ansible, Terraform, Docker and Kubernetese, ELK
 
-20% projects, July 2014 -- November 2014
+### Data Engineer (contract) 
 
-* Extend our in-house logs processing utility Turbogrinder (similar in spirit
-  to Stackdriver [logs-based metrics][logs-based-metrics], but simple enough
-  for one engineer to build and run) to read logs published to our QA server.
-  This let us test it more quickly, and without using sensitive data access.
+_Royal Mail | GBI_<br/>
+May 2018 -- Present, London, UK
 
-* Build distribution support for Turbogrinder, allowing it to summarize time
-  series information including device temperature and ping round-trip times from
-  devices in the field.
+* I was part of Data Engineering team. I developed Data Platform and data algorithms on it which transformed the whole business and allowed releasing multiple great products. I advised and recommended best practices in Scala, Agile and Software Development, Architecture.
 
-### Technical Solutions Engineer
+* I implemented opt-1, opt-2 and opt-3 heuristic to solve VRP (Vehicle routing problem). This algorithm was essential for Royal Mail business, as it is unpractical to solve this task manually. Thanks to this algorithm another project "Late Arrival Packages" was able to kick off.
 
-_Google Cloud Search_<br/>
-July 2013 -- November 2014, New York City
+* I developed parcel delivery project which processed terabytes of data in a few hours. I was responsible for productionizing (porting from POC Python code to Scala) and implemented new features for Machine Learning modules: Train, Test, Post-process and Formatter. This project was able to predict 90% of all packages UK-wide with 2-hour precision.
 
-* Remotely diagnose and repair malfunctioning Google Search Appliances.
+Tech stack:
 
-* Write customer-deployable support scripts to troubleshoot Appliances in
-  embedded applications where no network access is available.
+- Scala, Apache Spark, Spark SQL, Yarn, HDFS, Linux, Apache Zeppelin, Python, TDD
+- Kubernetes, Docker, Akka-HTTP, MongoDB, Cats
+- On-premise Cloud
+- REST, swagger, gatling, postman
 
-* Develop a customer-deployable configuration profile to quiet fan operation on
-  Search Appliances, resolving several dozen escalated cases that had been
-  previously thought infeasible. This was one of the biggest issues at the time;
-  I got two [peer bonuses][peer-bonuses] and a spot bonus for this work.
+### Big Data Developer (contract)
 
-* Automate support for customers with common problems by extending our team's
-  [support AI][populares] to handle Search Appliance cases.
+_IHS Markit | Risk Factor Utility (FRTB)_<br/>
+September 2017 -- May 2018, London, UK
 
-* Work with external partners and vendors to ensure successful deployments at
-  large government and commercial customers.
+* I was part of the team which implemented very popular, and in-demand project required transforming significant amount of raw market data into FRTB-compliant risk factors and scenarios by using DSL language for risk modelling.
 
-### Consultant
+* I productionized Spark application on AWS (S3, EC2, EMR) with strong automatization requirement via Ansible and CloudFormation. Due to this change deployment across environments was consistent and automated so everybody in the team could do this by clicking one button in Jenkins.
 
-_Booz Allen Hamilton_<br/>
-June 2008 -- July 2013, McLean, VA
+* I helped developing functional Scala project, which main module was a custom DSL language used by Quants. Thanks to this feature our quants were able to produce FRTB solutions presented for multiple banks.
 
-* Developed custom mapping software in Python to ingest and visualize months of
-  [NAIS vessel movement data][NAIS] for a US Government client. Reduced the
-  time it takes to go from raw input to finished maps from a week to a day.
+Tech stack:
 
-* Built a LiDAR data warehouse for a US Government client. Developed a Python
-  Web application using Django, C++ data processing utilities, Celery to
-  schedule runs of these utilities, and an Oracle Spatial backend to store raw
-  and processed data.
+- TDD, Code review, Scrum team
+- Scala + cats library, Monix, Low-level Scala for DSL creation: Reflection, Sandbox
+- REST and Swagger
+- Apache Spark, Hadoop, Cassandra
+- AWS (EC2, S3), Cloud Computing, EMR, Yarn
+- Apache Zeppelin, Big Data, Helping BAs with notebooks written in Python
+- Agile: Scrum
+- CI / CD, Ansible, Git workflow
 
-* Worked with developers of open source utilities ([`points2grid`][points2grid],
-  [libLAS][libLAS], [PDAL][PDAL], [MapServer][MapServer], [GDAL][GDAL]) used in
-  the data warehouse, and contributed patches upstream.
+### Software Engineer (contract)
 
-* Rapidly prototyped Asset Management web applications. Generated project
-  overview presentations automatically from the database using the [ReportLab
-  Toolkit][reportlab]. Visualized financial data using [D3.js][D3].
+_OVO Energy | vCharge_<br/>
+April 2017 -- September 2017, London, UK
 
-### Internships
+* vCharge was a startup acquired by Ovo Energy. The idea was to control storage heaters installed in people homes. I closely worked with the owner who was located in the US (~everyday one-to-one online meetings). I had high impact on stakeholders. Throughout couple of months I was the only Scala developer.
 
-_USPS OIG_, June 2007 -- August 2007, Arlington, VA
+* I built a module to forecasting Energy prices using Dijkstra algorithm and mathematical model created by Data Scientists. It allowed to buy energy cheaper and "store" in the customers storage heaters.
 
-_Computer Sciences Corporation_, June 2006 -- August 2006, Chantilly, VA
+Tech Stack:
 
-_USPS IT_, June 2005 -- August 2005, Washington, DC
+- Scala, Akka, Play Framework, Lagom Framework
+- Python, C++
+- CQRS / Event Sourcing, Cassandra
+- Microservices
+- ScalaTest, Property-based testing
+
+### Scala Consultant (contract)
+
+_Civil Service Resourcing (Valtech) | Faststream, Fasttrack_<br/>
+February 2016 -- March 2017, London, UK
+
+* I developed an auto-grader module inside the web-based application deployed on HMRC's Tax Platform. The module allowed to assess and send emails to 120,000 candidates in a day-scale vs month-scale in the legacy system.
+
+Tech stack:
+
+- Scala and functional design
+- Play framework, RESTful API, MongoDB
+- Microservices, Kibana, Grafana
+- Cucumber, ScalaTest, Property-based testing
+  
+### Senior Software Engineer
+
+_Monitise | FinKit platform, Matm_<br/>
+February 2016 -- March 2017, London, UK
+
+* After a year of developing OSGI, Java platform for multiple financial institutions I was moved to brand new cloud platform with Scala, Akka, Microservice architectures: FinKit.
+
+Tech stack:
+
+- Scala, Akka
+- REST: Spray, Swagger (generator)
+- IBM Bluemix, NoSQL: Cloudant, AMQP protocol
+- Java 6 / 7, Apache Camel
+- Modularization: OSGi, Messaging: JMS
+- REST, SOAP, SOA
+- TDD, BDD, Continuous Delivery, Continuous Integration
+
+### Full stack Java Developer
+
+_Sabre Holdings_<br/>
+November 2010 -- August 2013, Krakow, Poland
+
+* I helped in developing web-based, highly configurable booking application for numerous airlines.
+
+* I proposed and implemented speeding up everyday development by recording a web state to disk. A tester could persist current state of the application and a developer could retrieve it at any time, at any moment – saving time and reproducing some nasty bugs in a second.
+
+Tech stack:
+
+- Java 5 / 6
+- Spring Core, MVC, Webflow
+- JavaScript, JSP
+- TDD, Continuous Integration, Object Oriented Programming, SOLID
+
+### Full stack Java Developer
+
+_ComArch_<br/>
+June 2008 -- November 2010, Krakow, Poland
+
+Tech stack:
+
+- Research: Comparing AJAX JSF frameworks: ICEfaces vs RichFaces
+- Tomcat & Websphere
+- Java 5 / 6, JSF, Portlets, JavaScript, AJAX
 
 ### Education
 
-M.S., Computer Science, George Washington University, 2013
+M.S., Computer Science, Jagiellonian University, 2005 - 2010, Krakow, Poland
 
-B.S., Computer Science, College of William and Mary, *magna cum laude,* 2008
+- Diploma dissertation: Comparing JSF frameworks: ICEfaces and RichFaces
 
-[D3]: https://d3js.org/
-[dogfood]: https://blog.codinghorror.com/the-ultimate-dogfooding-story/
-[GDAL]: http://www.gdal.org/
-[isostream]: https://gfiber.googlesource.com/vendor/google/platform/+/master/cmds/isostream.c
-[libLAS]: https://www.liblas.org/
-[logs-based-metrics]: https://cloud.google.com/logging/docs/view/logs_based_metrics
-[MapServer]: http://mapserver.org/
-[minijail]: https://www.chromium.org/chromium-os/developer-guide/chromium-os-sandboxing
-[NAIS]: https://www.uscg.mil/acquisition/nais
-[PDAL]: https://www.pdal.io/
-[peer-bonuses]: https://www.quora.com/What-are-peer-bonuses-at-Google-How-do-they-work
-[points2grid]: https://github.com/CRREL/points2grid
-[populares]: https://www.youtube.com/watch?v=bFHk2wUaCCs
-[reportlab]: http://www.reportlab.com/opensource/
+### Projects
+
+- appointary.com
+- stepstoyourhome.co.uk
+- www.lukastymo.com/inc/blog
+
+[github]: https://github.com/lukastymo
+[stackoverflow]: https://stackoverflow.com/users/574799/smas
+[codeforces]: https://codeforces.com/profile/smas

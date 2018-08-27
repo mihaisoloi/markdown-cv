@@ -1,0 +1,368 @@
+\documentclass[]{rss}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
+\usepackage[unicode=true]{hyperref}
+\PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
+\hypersetup{
+            pdftitle={Resume},
+            colorlinks=true,
+            linkcolor=blue,
+            citecolor=Blue,
+            urlcolor=Blue,
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+\date{}
+
+\begin{document}
+
+\name{Lukasz Tymoszczuk}
+\address{\\[-9pt] lukas@codeily.com | lukastymo.com}
+\begin{resume}
+
+I'm a Scala / Data Engineer with over 10 years' experience. I inspire
+and help teams in being productive. I love mathematics and algorithms.
+
+I'm goal oriented, proactive and able to work remotely, with outstanding
+communications skills.
+
+My business domain: Machine Learning (2018), Finance, Risk Management
+FRTB, MIFID, Basel: 5 years (2008 - 2010, 2013 - 2015, 2018), Energy
+industry: Energy price forecasting (2017), Public sector: Automatic
+recruitment (2016), Airline (2010 - 2013).
+
+Info:
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://github.com/lukastymo}{\texttt{github.com/lukastymo}}
+\item
+  \href{https://stackoverflow.com/users/574799/smas}{\texttt{stackoverflow.com/users/574799/smas}}
+  (top 2\%)
+\item
+  \href{https://codeforces.com/profile/smas}{\texttt{codeforces.com/profile/smas}}
+\end{itemize}
+
+Technical experience:
+
+\begin{itemize}
+\tightlist
+\item
+  Scala, Functional Programming, Java, JVM
+\item
+  Agile Development practices: CI/CD, TDD, PP, Code Review
+\item
+  Machine Learning, Python / Jupyter Notebook
+\item
+  Big Data: Apache Spark (development and tuning), ETL, SQL
+\item
+  Distributed Systems: Akka, Microservices, NoSQL, The Twelve-Factor App
+\item
+  DevOps \& Cloud: AWS, Google Cloud Platform, Azure, Ansible,
+  Terraform, Docker and Kubernetese, ELK
+\end{itemize}
+
+\subsubsection{Data Engineer (contract)}\label{data-engineer-contract}
+
+\emph{Royal Mail \textbar{} GBI} May 2018 -- Present, London, UK
+
+\begin{itemize}
+\item
+  I was part of Data Engineering team. I developed Data Platform and
+  data algorithms on it which transformed the whole business and allowed
+  releasing multiple great products. I advised and recommended best
+  practices in Scala, Agile and Software Development, Architecture.
+\item
+  I implemented opt-1, opt-2 and opt-3 heuristic to solve VRP (Vehicle
+  routing problem). This algorithm was essential for Royal Mail
+  business, as it is unpractical to solve this task manually. Thanks to
+  this algorithm another project ``Late Arrival Packages'' was able to
+  kick off.
+\item
+  I developed parcel delivery project which processed terabytes of data
+  in a few hours. I was responsible for productionizing (porting from
+  POC Python code to Scala) and implemented new features for Machine
+  Learning modules: Train, Test, Post-process and Formatter. This
+  project was able to predict 90\% of all packages UK-wide with 2-hour
+  precision.
+\end{itemize}
+
+Tech stack:
+
+\begin{itemize}
+\tightlist
+\item
+  Scala, Apache Spark, Spark SQL, Yarn, HDFS, Linux, Apache Zeppelin,
+  Python, TDD
+\item
+  Kubernetes, Docker, Akka-HTTP, MongoDB, Cats
+\item
+  On-premise Cloud
+\item
+  REST, swagger, gatling, postman
+\end{itemize}
+
+\subsubsection{Big Data Developer
+(contract)}\label{big-data-developer-contract}
+
+\emph{IHS Markit \textbar{} Risk Factor Utility (FRTB)} September 2017
+-- May 2018, London, UK
+
+\begin{itemize}
+\item
+  I was part of the team which implemented very popular, and in-demand
+  project required transforming significant amount of raw market data
+  into FRTB-compliant risk factors and scenarios by using DSL language
+  for risk modelling.
+\item
+  I productionized Spark application on AWS (S3, EC2, EMR) with strong
+  automatization requirement via Ansible and CloudFormation. Due to this
+  change deployment across environments was consistent and automated so
+  everybody in the team could do this by clicking one button in Jenkins.
+\item
+  I helped developing functional Scala project, which main module was a
+  custom DSL language used by Quants. Thanks to this feature our quants
+  were able to produce FRTB solutions presented for multiple banks.
+\end{itemize}
+
+Tech stack:
+
+\begin{itemize}
+\tightlist
+\item
+  TDD, Code review, Scrum team
+\item
+  Scala + cats library, Monix, Low-level Scala for DSL creation:
+  Reflection, Sandbox
+\item
+  REST and Swagger
+\item
+  Apache Spark, Hadoop, Cassandra
+\item
+  AWS (EC2, S3), Cloud Computing, EMR, Yarn
+\item
+  Apache Zeppelin, Big Data, Helping BAs with notebooks written in
+  Python
+\item
+  Agile: Scrum
+\item
+  CI / CD, Ansible, Git workflow
+\end{itemize}
+
+\subsubsection{Software Engineer
+(contract)}\label{software-engineer-contract}
+
+\emph{OVO Energy \textbar{} vCharge} April 2017 -- September 2017,
+London, UK
+
+\begin{itemize}
+\item
+  vCharge was a startup acquired by Ovo Energy. The idea was to control
+  storage heaters installed in people homes. I closely worked with the
+  owner who was located in the US (\textasciitilde{}everyday one-to-one
+  online meetings). I had high impact on stakeholders. Throughout couple
+  of months I was the only Scala developer.
+\item
+  I built a module to forecasting Energy prices using Dijkstra algorithm
+  and mathematical model created by Data Scientists. It allowed to buy
+  energy cheaper and ``store'' in the customers storage heaters.
+\end{itemize}
+
+Tech Stack:
+
+\begin{itemize}
+\tightlist
+\item
+  Scala, Akka, Play Framework, Lagom Framework
+\item
+  Python, C++
+\item
+  CQRS / Event Sourcing, Cassandra
+\item
+  Microservices
+\item
+  ScalaTest, Property-based testing
+\end{itemize}
+
+\subsubsection{Scala Consultant
+(contract)}\label{scala-consultant-contract}
+
+\emph{Civil Service Resourcing (Valtech) \textbar{} Faststream,
+Fasttrack} February 2016 -- March 2017, London, UK
+
+\begin{itemize}
+\tightlist
+\item
+  I developed an auto-grader module inside the web-based application
+  deployed on HMRC's Tax Platform. The module allowed to assess and send
+  emails to 120,000 candidates in a day-scale vs month-scale in the
+  legacy system.
+\end{itemize}
+
+Tech stack:
+
+\begin{itemize}
+\tightlist
+\item
+  Scala and functional design
+\item
+  Play framework, RESTful API, MongoDB
+\item
+  Microservices, Kibana, Grafana
+\item
+  Cucumber, ScalaTest, Property-based testing
+\end{itemize}
+
+\subsubsection{Senior Software Engineer}\label{senior-software-engineer}
+
+\emph{Monitise \textbar{} FinKit platform, Matm} February 2016 -- March
+2017, London, UK
+
+\begin{itemize}
+\tightlist
+\item
+  After a year of developing OSGI, Java platform for multiple financial
+  institutions I was moved to brand new cloud platform with Scala, Akka,
+  Microservice architectures: FinKit.
+\end{itemize}
+
+Tech stack:
+
+\begin{itemize}
+\tightlist
+\item
+  Scala, Akka
+\item
+  REST: Spray, Swagger (generator)
+\item
+  IBM Bluemix, NoSQL: Cloudant, AMQP protocol
+\item
+  Java 6 / 7, Apache Camel
+\item
+  Modularization: OSGi, Messaging: JMS
+\item
+  REST, SOAP, SOA
+\item
+  TDD, BDD, Continuous Delivery, Continuous Integration
+\end{itemize}
+
+\subsubsection{Full stack Java
+Developer}\label{full-stack-java-developer}
+
+\emph{Sabre Holdings} November 2010 -- August 2013, Krakow, Poland
+
+\begin{itemize}
+\item
+  I helped in developing web-based, highly configurable booking
+  application for numerous airlines.
+\item
+  I proposed and implemented speeding up everyday development by
+  recording a web state to disk. A tester could persist current state of
+  the application and a developer could retrieve it at any time, at any
+  moment -- saving time and reproducing some nasty bugs in a second.
+\end{itemize}
+
+Tech stack:
+
+\begin{itemize}
+\tightlist
+\item
+  Java 5 / 6
+\item
+  Spring Core, MVC, Webflow
+\item
+  JavaScript, JSP
+\item
+  TDD, Continuous Integration, Object Oriented Programming, SOLID
+\end{itemize}
+
+\subsubsection{Full stack Java
+Developer}\label{full-stack-java-developer-1}
+
+\emph{ComArch} June 2008 -- November 2010, Krakow, Poland
+
+Tech stack:
+
+\begin{itemize}
+\tightlist
+\item
+  Research: Comparing AJAX JSF frameworks: ICEfaces vs RichFaces
+\item
+  Tomcat \& Websphere
+\item
+  Java 5 / 6, JSF, Portlets, JavaScript, AJAX
+\end{itemize}
+
+\subsubsection{Education}\label{education}
+
+M.S., Computer Science, Jagiellonian University, 2005 - 2010, Krakow,
+Poland
+
+\begin{itemize}
+\tightlist
+\item
+  Diploma dissertation: Comparing JSF frameworks: ICEfaces and RichFaces
+\end{itemize}
+
+\subsubsection{Projects}\label{projects}
+
+\begin{itemize}
+\tightlist
+\item
+  appointary.com
+\item
+  stepstoyourhome.co.uk
+\item
+  www.lukastymo.com/inc/blog
+\end{itemize}
+
+\end{resume}
+
+\end{document}
