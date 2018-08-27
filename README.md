@@ -19,3 +19,9 @@ Generate PDF:
 ```
 
 The CV is generated in `final/` folder.
+
+## Example
+
+[`my cv`][cv]
+
+[cv]: https://github.com/lukastymo/markdown-cv/blob/master/final/resume.pdf
