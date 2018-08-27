@@ -22,6 +22,6 @@ The CV is generated in `final/` folder.
 
 ## Example
 
-[`my cv`][cv]
+[`My latest CV`][cv]
 
 [cv]: https://github.com/lukastymo/markdown-cv/blob/master/final/resume.pdf
