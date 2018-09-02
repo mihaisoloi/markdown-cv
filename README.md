@@ -1,4 +1,4 @@
-# Lukasz - CV
+# Professional CV from markdown to LaTeX and PDF
 
 ## Step 1 - Prerequisites
 
