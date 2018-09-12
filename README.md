@@ -1,4 +1,11 @@
-# Lukasz - CV
+# Professional CV from markdown to LaTeX and PDF
+
+## Final effect
+
+[`My latest CV`][cv]
+
+[cv]: https://github.com/lukastymo/markdown-cv/blob/master/final/resume.pdf
+
 
 ## Step 1 - Prerequisites
 
@@ -19,9 +26,3 @@ Generate PDF:
 ```
 
 The CV is generated in `final/` folder.
-
-## Example
-
-[`My latest CV`][cv]
-
-[cv]: https://github.com/lukastymo/markdown-cv/blob/master/final/resume.pdf
