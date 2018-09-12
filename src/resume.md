@@ -84,7 +84,7 @@ Tech Stack:
 ### Scala Consultant (contract)
 
 _Civil Service Resourcing (Valtech) | Faststream, Fasttrack_<br/>
-February 2016 -- March 2017, London, UK
+February 2016 -- April 2017, London, UK
 
 * I developed an auto-grader module inside the web-based application deployed on HMRC's Tax Platform. The module allowed to assess and send emails to 120,000 candidates in a day-scale vs month-scale in the legacy system.
 
@@ -98,7 +98,7 @@ Tech stack:
 ### Senior Software Engineer
 
 _Monitise | FinKit platform, Matm_<br/>
-February 2016 -- March 2017, London, UK
+August 2013 -- February 2016, London, UK
 
 * After a year of developing OSGI, Java platform for multiple financial institutions I was moved to brand new cloud platform with Scala, Akka, Microservice architectures: FinKit.
 
