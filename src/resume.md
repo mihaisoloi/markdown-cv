@@ -3,31 +3,51 @@ title: Resume
 layout: post
 ---
 
-I'm a Scala / Data Engineer with over ten years' experience. I inspire and help teams in being productive. I love mathematics and algorithms.
+I'm a Scala / Data Engineer with over eleven years' experience. I inspire and help teams in being productive. I love mathematics, algorithms and problem-solving. I'm a founder of scalaworkshop.com.
 
 I'm goal oriented, proactive and able to work remotely, with outstanding communications skills.
 
-My business domain: Machine Learning (2018), Finance, Risk Management FRTB, MIFID, Basel: 5 years (2008 - 2010, 2013 - 2015, 2018), Energy industry: Energy price forecasting (2017), Public sector: Automatic recruitment (2016), Airline (2010 - 2013).
+My business experience: Legal (ISDA, initial margin documentation), Machine Learning (Apache Spark, Scala, Python, Docker), Finance and Banking (Risk Management FRTB, MIFID, Basel), Energy industry (Energy price forecasting, IoT), Public sector (Automatic recruitment system), Aviation.
 
 Info:
 
-- [`github.com/lukastymo`][github]
 - [`stackoverflow.com/users/574799/smas`][stackoverflow] (top 2%)
+- [`github.com/lukastymo`][github]
 - [`codeforces.com/profile/smas`][codeforces]
 
 Technical experience:
 
 - Scala, Functional Programming, Java, JVM
-- Agile Development practices: CI/CD, TDD, PP, Code Review
+- Big Data: Apache Spark, HDFS, Apache Hive, ETL, SQL, Docker
 - Machine Learning, Python / Jupyter Notebook
-- Big Data: Apache Spark (development and tuning), ETL, SQL
+- DevOps & Cloud: AWS, Ansible, Terraform, Grafana, Docker and Kubernetese, ELK
 - Distributed Systems: Akka, Microservices, NoSQL, The Twelve-Factor App
-- DevOps & Cloud: AWS, Google Cloud Platform, Azure, Ansible, Terraform, Docker and Kubernetese, ELK
+- Agile Development practices: CI/CD, TDD, Pair Programming, Code Review
+
+### Senior Scala Developer (contract) 
+
+_Linklaters | Nakhoda_<br/>
+November 2018 -- Present, London, UK
+
+* My work in the project required a lot of proactiveness and programming. Firstly, I clarified requirements between lawyers, frontend developers and designers. Then, I suggested best solution for the problem, and finally I implemented the feature(s) in a one-week sprint.
+
+* I implemented essential modules in the project: Document Approvals, Comments, Custom Job Queue solutions.
+
+* I promoted and implemented Gatling performance tests attached to our CI/CD pipeline.
+
+Tech stack and activities:
+
+- Functional Scala, Cats, Monix Tasks, Doobie
+- PostgreSQL
+- TDD, Lean Agile and pragmatic Scala evangelist
+- Kubernetes, Docker, On-premise Cloud
+- REST, API versioning, Swagger, Database migration
+- I was participating in our release rota in which throughout the whole week I release the project, potential hotfixes, prepare release notes, coordinate all the teams and develop stories assigned to me.
 
 ### Data Engineer (contract) 
 
 _Royal Mail | GBI_<br/>
-May 2018 -- Present, London, UK
+May 2018 -- November 2018, London, UK
 
 * I was part of Data Engineering team. I developed Data Platform and data algorithms on it which transformed the whole business and allowed releasing multiple great products. I advised and recommended best practices in Scala, Agile and Software Development, Architecture.
 
@@ -37,47 +57,48 @@ May 2018 -- Present, London, UK
 
 Tech stack:
 
-- Scala, Apache Spark, Spark SQL, Yarn, HDFS, Linux, Apache Zeppelin, Python, TDD
-- Kubernetes, Docker, Akka-HTTP, MongoDB, Cats
+- Scala (main production language), Python (PoC)
+- Apache Spark (Spark SQL), Yarn, HDFS, Linux, Apache Zeppelin, 
+- TDD, Kubernetes, Docker, Akka-HTTP, MongoDB, Cats
 - On-premise Cloud
-- REST, swagger, gatling, postman
+- REST, Swagger, Gatling
 
 ### Big Data Developer (contract)
 
 _IHS Markit | Risk Factor Utility (FRTB)_<br/>
 September 2017 -- May 2018, London, UK
 
-* I was part of the team which implemented very popular, and in-demand project required transforming significant amount of raw market data into FRTB-compliant risk factors and scenarios by using DSL language for risk modelling.
+* I productionized Spark application on AWS (S3, EC2, EMR) with strong automatization requirement via Ansible and CloudFormation. Due to this change deployment across environments was consistent and automated, so everybody on the team could do this by clicking one button in Jenkins.
 
-* I productionized Spark application on AWS (S3, EC2, EMR) with strong automatization requirement via Ansible and CloudFormation. Due to this change deployment across environments was consistent and automated so everybody on the team could do this by clicking one button in Jenkins.
+* I was part of the team which implemented very popular, and in-demand project required transforming the significant amount of raw market data into FRTB-compliant risk factors and scenarios by using DSL language for risk modelling.
 
-* I helped developing functional Scala project, which the main module was a custom DSL language used by Quants. Thanks to this feature our quants were able to produce FRTB solutions presented for multiple banks.
+* I helped developing functional Scala project, which the main module was a custom DSL language used by Quants. Thanks to this feature, our quants were able to produce FRTB solutions presented for multiple banks.
 
 Tech stack:
 
-- TDD, Code review, Scrum team
-- Scala + cats library, Monix, Low-level Scala for DSL creation: Reflection, Sandbox
-- REST and Swagger
+- Scala, Cats, Monix Tasks
 - Apache Spark, Hadoop, Cassandra
 - AWS (EC2, S3), Cloud Computing, EMR, Yarn
 - Apache Zeppelin, Big Data, Helping BAs with notebooks written in Python
-- Agile: Scrum
 - CI / CD, Ansible, Git workflow
+- TDD, Code review, Scrum team
+- REST, Swagger
+- Agile: Scrum
 
 ### Software Engineer (contract)
 
 _OVO Energy | vCharge_<br/>
 April 2017 -- September 2017, London, UK
 
-* vCharge was a startup acquired by Ovo Energy. The idea was to control storage heaters installed in people homes. I worked with the owner who was located in the US (~ daily one-to-one online meetings). I had a high impact on stakeholders. Throughout a couple of months, I was the only Scala developer.
+* vCharge was a startup acquired by Ovo Energy. The idea was to control storage heaters installed in people homes. I worked with the owner, who was located in the US (~ daily one-to-one online meetings). I had a high impact on stakeholders. Throughout a couple of months, I was the only Scala developer.
 
 * I built a module to forecasting Energy prices using the Dijkstra algorithm and mathematical model created by Data Scientists. It allowed buying energy cheaper and "store" in the customers' storage heaters.
 
 Tech Stack:
 
 - Scala, Akka, Play Framework, Lagom Framework
-- Python, C++
 - CQRS / Event Sourcing, Cassandra
+- Python (PoC)
 - Microservices
 - ScalaTest, Property-based testing
 
@@ -123,37 +144,17 @@ November 2010 -- August 2013, Krakow, Poland
 
 Tech stack:
 
-- Java 5 / 6
-- Spring Core, MVC, Webflow
-- JavaScript, JSP
-- TDD, Continuous Integration, Object-Oriented Programming, SOLID
+- Java, Spring Core, MVC, Webflow, JavaScript, JSP, TDD, CI, SOLID
 
 ### Full stack Java Developer
 
 _ComArch_<br/>
 June 2008 -- November 2010, Krakow, Poland
 
-Tech stack:
-
-- Research: Comparing AJAX JSF frameworks: ICEfaces vs RichFaces
-- Tomcat & Websphere
-- Java 5 / 6, JSF, Portlets, JavaScript, AJAX
+- ICEfaces vs RichFaces, Tomcat & Websphere, Java, JSF, Portlets, JavaScript, AJAX
 
 ### Education
 
 M.S., Computer Science, Jagiellonian University, 2005 - 2010, Krakow, Poland
 
 - Diploma dissertation: Comparing JSF frameworks: ICEfaces and RichFaces
-
-### Projects
-
-- [`appointary.com`][appointary]
-- [`stepstoyourhome.co.uk`][steps]
-- [`www.lukastymo.com/inc/blog`][blog]
-
-[github]: https://github.com/lukastymo
-[stackoverflow]: https://stackoverflow.com/users/574799/smas
-[codeforces]: https://codeforces.com/profile/smas
-[appointary]: https://appointary.com
-[steps]: http://stepstoyourhome.co.uk
-[blog]: http://www.lukastymo.com/inc/blog
