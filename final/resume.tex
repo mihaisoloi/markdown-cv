@@ -1,389 +1,400 @@
-\documentclass[]{rss}
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
+%
+\documentclass[
+]{rss}
+\usepackage{amsmath,amssymb}
 \usepackage{lmodern}
-\usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
-\usepackage{fixltx2e} % provides \textsubscript
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
-\else % if luatex or xelatex
-  \ifxetex
-    \usepackage{mathspec}
-  \else
-    \usepackage{fontspec}
-  \fi
-  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
 \fi
-% use upquote if available, for straight quotes in verbatim environments
+% Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-% use microtype if available
-\IfFileExists{microtype.sty}{%
-\usepackage[]{microtype}
-\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
-\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
-\usepackage[unicode=true]{hyperref}
-\PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
-            pdftitle={Resume},
-            colorlinks=true,
-            linkcolor=blue,
-            citecolor=Blue,
-            urlcolor=Blue,
-            breaklinks=true}
-\urlstyle{same}  % don't use monospace font for urls
-\IfFileExists{parskip.sty}{%
-\usepackage{parskip}
-}{% else
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt plus 2pt minus 1pt}
-}
-\setlength{\emergencystretch}{3em}  % prevent overfull lines
+  pdftitle={Resume},
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=Maroon,
+  citecolor=Blue,
+  urlcolor=Blue,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\setcounter{secnumdepth}{0}
-% Redefines (sub)paragraphs to behave more like sections
-\ifx\paragraph\undefined\else
-\let\oldparagraph\paragraph
-\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
-\fi
-\ifx\subparagraph\undefined\else
-\let\oldsubparagraph\subparagraph
-\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
 \fi
 
-% set default figure placement to htbp
-\makeatletter
-\def\fps@figure{htbp}
-\makeatother
-
-
+\author{}
 \date{}
 
 \begin{document}
 
-\name{Lukasz Tymoszczuk}
-\address{\\[-9pt] lukas@codeily.com | lukastymo.com}
+\name{Mihai Soloi}
+\address{\\[-9pt] mihai.soloi@gmail.com | +44 (0) 7706074771 | https://www.linkedin.com/in/mihaisoloi}
 \begin{resume}
 
-I'm a Scala / Data Engineer with over eleven years' experience. I
-inspire and help teams in being productive. I love mathematics,
-algorithms and problem-solving. I'm a founder of scalaworkshop.com.
+I am an easy-going, flexible person who can work under pressure. I'm a
+quick learner, perpetually looking for new ideas. Have strong
+mathematical, logical, analytical background. I'm not afraid of
+responsibility. I quickly react to changes and adapt to them. I consider
+myself to have outstanding communications skills also due to substantial
+remote work experience(i.e.~5+ years).
 
-I'm goal oriented, proactive and able to work remotely, with outstanding
-communications skills.
-
-My business experience: Legal (ISDA, initial margin documentation),
-Machine Learning (Apache Spark, Scala, Python, Docker), Finance and
-Banking (Risk Management FRTB, MIFID, Basel), Energy industry (Energy
-price forecasting, IoT), Public sector (Automatic recruitment system),
-Aviation.
-
-Info:
-
-\begin{itemize}
-\tightlist
-\item
-  {[}\texttt{stackoverflow.com/users/574799/smas}{]}{[}stackoverflow{]}
-  (top 2\%)
-\item
-  {[}\texttt{github.com/lukastymo}{]}{[}github{]}
-\item
-  {[}\texttt{codeforces.com/profile/smas}{]}{[}codeforces{]}
-\end{itemize}
+My business experience: Open-source, Legal (ISDA, initial margin
+documentation), Energy industry (Energy price forecasting, IoT),
+Gambling industry (Sport betting), Health sector (Diabetes Glucose
+Management)
 
 Technical experience:
 
 \begin{itemize}
 \tightlist
 \item
-  Scala, Functional Programming, Java, JVM
+  Preferred language: Scala(10+ years) - FP.
 \item
-  Big Data: Apache Spark, HDFS, Apache Hive, ETL, SQL, Docker
+  Worked with big names in Scala FP community:
+  \href{https://monix.io}{Alex Nedelcu} (5 years) \&
+  \href{https://julien-truffaut.github.io/Monocle}{Julien Truffaut} (1
+  year), from both of which I've learned a lot.
 \item
-  Machine Learning, Python / Jupyter Notebook
+  Contributed to open-source libraries: Monix, Monix-Kafka, SBT Silencer
+  Plugin
 \item
-  DevOps \& Cloud: AWS, Ansible, Terraform, Grafana, Docker and
-  Kubernetese, ELK
+  Some language experience with: Java (2 years), Python (1 year), JS (1
+  year), Haskell (toy projects)
 \item
-  Distributed Systems: Akka, Microservices, NoSQL, The Twelve-Factor App
+  Libraries I worked with: Play, Akka, Cats, Monix (Reactive \& Async),
+  Doobie, HTTP4s, Akka-HTTP, Monocle, Lucene, ReactJS
 \item
-  Agile Development practices: CI/CD, TDD, Pair Programming, Code Review
+  Distributed Systems: Akka (Actors + Streams), Kafka, RabbitMQ
+\item
+  Software familiar with: Kubernetes, Docker, PostgreSQL, MongoDB, ELK
+  stack
 \end{itemize}
 
+\hypertarget{lead-scala-developer-contract}{%
+\subsubsection{Lead Scala Developer
+(contract)}\label{lead-scala-developer-contract}}
+
+\emph{Investsuite} December 2020 -- Present, London, UK
+
+Responsible for the integration with the SAXO broker and the technical
+direction of the team.
+
+Technology summary:
+
+\begin{itemize}
+\tightlist
+\item
+  Programming languages: Scala
+\item
+  Libraries: ZIO, Akka HTTP, Doobie, Quill
+\item
+  Software: Docker, PostgreSQL, Kafka
+\end{itemize}
+
+\hypertarget{senior-scala-developer-contract}{%
 \subsubsection{Senior Scala Developer
-(contract)}\label{senior-scala-developer-contract}
+(contract)}\label{senior-scala-developer-contract}}
 
-\emph{Linklaters \textbar{} Nakhoda} November 2018 -- Present, London,
-UK
-
-\begin{itemize}
-\item
-  My work in the project required a lot of proactiveness and
-  programming. Firstly, I clarified requirements between lawyers,
-  frontend developers and designers. Then, I suggested best solution for
-  the problem, and finally I implemented the feature(s) in a one-week
-  sprint.
-\item
-  I implemented essential modules in the project: Document Approvals,
-  Comments, Custom Job Queue solutions.
-\item
-  I promoted and implemented Gatling performance tests attached to our
-  CI/CD pipeline.
-\end{itemize}
-
-Tech stack and activities:
-
-\begin{itemize}
-\tightlist
-\item
-  Functional Scala, Cats, Monix Tasks, Doobie
-\item
-  PostgreSQL
-\item
-  TDD, Lean Agile and pragmatic Scala evangelist
-\item
-  Kubernetes, Docker, On-premise Cloud
-\item
-  REST, API versioning, Swagger, Database migration
-\item
-  I was participating in our release rota in which throughout the whole
-  week I release the project, potential hotfixes, prepare release notes,
-  coordinate all the teams and develop stories assigned to me.
-\end{itemize}
-
-\subsubsection{Data Engineer (contract)}\label{data-engineer-contract}
-
-\emph{Royal Mail \textbar{} GBI} May 2018 -- November 2018, London, UK
-
-\begin{itemize}
-\item
-  I was part of Data Engineering team. I developed Data Platform and
-  data algorithms on it which transformed the whole business and allowed
-  releasing multiple great products. I advised and recommended best
-  practices in Scala, Agile and Software Development, Architecture.
-\item
-  I implemented opt-1, opt-2 and opt-3 heuristic to solve VRP (Vehicle
-  routing problem). This algorithm was essential for Royal Mail
-  business, as it is unpractical to solve this task manually. Thanks to
-  this algorithm another project ``Late Arrival Packages'' was able to
-  kick off.
-\item
-  I developed parcel delivery project which processed terabytes of data
-  in a few hours. I was responsible for productionizing (porting from
-  POC Python code to Scala) and implemented new features for Machine
-  Learning modules: Train, Test, Post-process and Formatter. This
-  project was able to predict 90\% of all packages UK-wide with 2-hour
-  precision.
-\end{itemize}
-
-Tech stack:
-
-\begin{itemize}
-\tightlist
-\item
-  Scala (main production language), Python (PoC)
-\item
-  Apache Spark (Spark SQL), Yarn, HDFS, Linux, Apache Zeppelin,
-\item
-  TDD, Kubernetes, Docker, Akka-HTTP, MongoDB, Cats
-\item
-  On-premise Cloud
-\item
-  REST, Swagger, Gatling
-\end{itemize}
-
-\subsubsection{Big Data Developer
-(contract)}\label{big-data-developer-contract}
-
-\emph{IHS Markit \textbar{} Risk Factor Utility (FRTB)} September 2017
--- May 2018, London, UK
-
-\begin{itemize}
-\item
-  I productionized Spark application on AWS (S3, EC2, EMR) with strong
-  automatization requirement via Ansible and CloudFormation. Due to this
-  change deployment across environments was consistent and automated, so
-  everybody on the team could do this by clicking one button in Jenkins.
-\item
-  I was part of the team which implemented very popular, and in-demand
-  project required transforming the significant amount of raw market
-  data into FRTB-compliant risk factors and scenarios by using DSL
-  language for risk modelling.
-\item
-  I helped developing functional Scala project, which the main module
-  was a custom DSL language used by Quants. Thanks to this feature, our
-  quants were able to produce FRTB solutions presented for multiple
-  banks.
-\end{itemize}
-
-Tech stack:
-
-\begin{itemize}
-\tightlist
-\item
-  Scala, Cats, Monix Tasks
-\item
-  Apache Spark, Hadoop, Cassandra
-\item
-  AWS (EC2, S3), Cloud Computing, EMR, Yarn
-\item
-  Apache Zeppelin, Big Data, Helping BAs with notebooks written in
-  Python
-\item
-  CI / CD, Ansible, Git workflow
-\item
-  TDD, Code review, Scrum team
-\item
-  REST, Swagger
-\item
-  Agile: Scrum
-\end{itemize}
-
-\subsubsection{Software Engineer
-(contract)}\label{software-engineer-contract}
-
-\emph{OVO Energy \textbar{} vCharge} April 2017 -- September 2017,
+\emph{HSS Hire - AnyJunk \textbar{} Signify} March 2020 -- October 2020,
 London, UK
 
-\begin{itemize}
-\item
-  vCharge was a startup acquired by Ovo Energy. The idea was to control
-  storage heaters installed in people homes. I worked with the owner,
-  who was located in the US (\textasciitilde{} daily one-to-one online
-  meetings). I had a high impact on stakeholders. Throughout a couple of
-  months, I was the only Scala developer.
-\item
-  I built a module to forecasting Energy prices using the Dijkstra
-  algorithm and mathematical model created by Data Scientists. It
-  allowed buying energy cheaper and ``store'' in the customers' storage
-  heaters.
-\end{itemize}
+Worked on a project for a partnership between HSS Hire and Anyjunk,
+which allows the clients be more in control over the process of booking
+construction equipment.
 
-Tech Stack:
+The project is built on a back-end of Scala and FP libraries, and a
+ReactJS front-end.
+
+I've been in charge of the integration between the back-end systems
+between the two companies as well as integrating Stripe payments for
+easier client aquisitions.
+
+Worked on the implementation of:
 
 \begin{itemize}
 \tightlist
 \item
-  Scala, Akka, Play Framework, Lagom Framework
+  asynchronous communication to 3rd party supplier via AWS MKS
 \item
-  CQRS / Event Sourcing, Cassandra
+  revamping deployment to be done via Docker containers and AWS ECS
 \item
-  Python (PoC)
+  introduced build via Github CI
 \item
-  Microservices
+  introduced testing using property based tests
 \item
-  ScalaTest, Property-based testing
+  implemented Stripe integration and contract workflow
+\item
+  pushed for better code quality and code review practices
 \end{itemize}
 
-\subsubsection{Scala Consultant
-(contract)}\label{scala-consultant-contract}
-
-\emph{Civil Service Resourcing (Valtech) \textbar{} Faststream,
-Fasttrack} February 2016 -- April 2017, London, UK
+Technology summary:
 
 \begin{itemize}
 \tightlist
 \item
-  I developed an auto-grader module inside the web-based application
-  deployed on HMRC's Tax Platform. The module allowed to assess and send
-  emails to 120,000 candidates in a day-scale vs month-scale in the
-  legacy system.
+  Programming languages: Scala, JS
+\item
+  Libraries: Akka HTTP, Cats, Monix, Circe, Monocle, ReactJS
+\item
+  Software: Docker, PostgreSQL, ELK stack
 \end{itemize}
 
-Tech stack:
+\hypertarget{lead-scala-developer-contract-1}{%
+\subsubsection{Lead Scala Developer
+(contract)}\label{lead-scala-developer-contract-1}}
+
+\emph{Linklaters \textbar{} Nakhoda} May 2018 -- December 2019, London,
+UK
+
+Worked on a project for a partnership between Linklaters and
+International Securities and Derivatives Association (ISDA) that allows
+lawyers to reduce the negotiation time of contracts from 9 months to a
+matter of hours and to extract metadata from negotiated contracts.
+
+The project is built on a back-end of Scala and FP libraries, and a
+ReactJS front-end.
+
+I've been in charge of the back-end development of the negotiation
+workflow logic and validation of the schema definitions and answers
+specification submitted for each document type.
+
+Worked on the implementation of:
 
 \begin{itemize}
 \tightlist
 \item
-  Scala and functional design
+  designed and developed multiple types of negotiation workflows
 \item
-  Play framework, RESTful API, MongoDB
+  validation of submittion of answers
 \item
-  Microservices, Kibana, Grafana
+  document schema conception and definition
 \item
-  Cucumber, ScalaTest, Property-based testing
+  printing documents from HTML templates into PDF and DOCX outputs
+\item
+  Lucene index building and a custom search solution
+\item
+  Okta SSO integration
+\item
+  custom templating and sending emails via Amazon SES
+\item
+  job queue built on top of PostgreSQL
 \end{itemize}
 
-\subsubsection{Senior Software Engineer}\label{senior-software-engineer}
-
-\emph{Monitise \textbar{} FinKit platform, Matm} August 2013 -- February
-2016, London, UK
+Accomplishments:
 
 \begin{itemize}
 \tightlist
 \item
-  After a year of developing OSGI, Java platform for multiple financial
-  institutions I was moved to brand new cloud platform with Scala, Akka,
-  Microservice architectures: FinKit.
+  Project received many industry prizes and was recognized as a
+  revolution in the industry
+\item
+  Introduced colleagues to functional style of programming and acted as
+  mentor for all the new Scala developers in the project.
 \end{itemize}
 
-Tech stack:
+Technology summary:
 
 \begin{itemize}
 \tightlist
 \item
-  Scala, Akka
+  Programming languages: Scala, Python, JS, PHP
 \item
-  REST: Spray, Swagger (generator)
+  Libraries: Play, Cats, Monix, Doobie, HTTP4s, Monocle, Lucene, ReactJS
 \item
-  IBM Bluemix, NoSQL: Cloudant, AMQP protocol
-\item
-  Java 6 / 7, Apache Camel
-\item
-  Modularization: OSGi, Messaging: JMS
-\item
-  REST, SOAP, SOA
-\item
-  TDD, BDD, Continuous Delivery, Continuous Integration
+  Software: Kubernetes, Docker, PostgreSQL, ELK stack, PDFTk, PHP-Docx
 \end{itemize}
 
-\subsubsection{Full stack Java
-Developer}\label{full-stack-java-developer}
+\hypertarget{scala-developer-contract}{%
+\subsubsection{Scala Developer
+(contract)}\label{scala-developer-contract}}
 
-\emph{Sabre Holdings} November 2010 -- August 2013, Krakow, Poland
-
-\begin{itemize}
-\item
-  I helped in developing web-based, highly configurable booking
-  application for numerous airlines.
-\item
-  I proposed and implemented speeding up development by recording a web
-  state to disk. A tester could persist the current state of the
-  application, and a developer could retrieve it at any time, at any
-  moment -- saving time and reproducing some nasty bugs in a second.
-\end{itemize}
-
-Tech stack:
+\emph{Eloquentix} Octobre 2013 - May 2018, full remote: Bucharest,
+Romania
 
 \begin{itemize}
 \tightlist
 \item
-  Java, Spring Core, MVC, Webflow, JavaScript, JSP, TDD, CI, SOLID
+  \emph{Livongo} May 2015 - January 2016
 \end{itemize}
 
-\subsubsection{Full stack Java
-Developer}\label{full-stack-java-developer-1}
-
-\emph{ComArch} June 2008 -- November 2010, Krakow, Poland
+Worked on project advancing the health-care industry, being in charge of
+building an engine that automatically generates forms for patients based
+on doctor's feedback, and blood glucose monitoring device that feeds in
+data once per day from patients to the system.
 
 \begin{itemize}
 \tightlist
 \item
-  ICEfaces vs RichFaces, Tomcat \& Websphere, Java, JSF, Portlets,
-  JavaScript, AJAX
+  \emph{E.ON} Octobre 2013 - May 2018, on-site: 1 week every 2 months in
+  Essen, Germany
 \end{itemize}
 
-\subsubsection{Education}\label{education}
+Worked on a project that monitors and controls power plants. The project
+is built as a micro-services architecture, on top of the JVM. I've been
+in charge of the bottom layer of the system, which involved implementing
+the required communication protocols, modeling of state machines that
+mirror multiple power plant types and processing real time signals.
 
-M.S., Computer Science, Jagiellonian University, 2005 - 2010, Krakow,
-Poland
+I have also acted as a senior consultant for getting teams up to speed
+with best development practices for the JVM, Scala and
+functional/reactive programming.
+
+Worked on the implementation of:
 
 \begin{itemize}
 \tightlist
 \item
-  Diploma dissertation: Comparing JSF frameworks: ICEfaces and RichFaces
+  required communication protocols
+\item
+  soft real-time signal processing
+\item
+  modeling state machines that mirror multiple power plant types
+\item
+  a system that accurately simulates the behavior of real world power
+  plants, from very little specification, that allowed acceptance
+  testing of overall platform
+\item
+  core logic that provisioned and aggregated virtual power plants
+\item
+  the rules for trading on Germany's and UK's energy market
+\item
+  the handling of milions of datapoints per second getting streamed
+  through Kafka reliably, stored in the TSDB and streamed via WS to
+  clients
+\item
+  notification of users both through email and SMS as well as calls via
+  integration with Twilio
 \end{itemize}
+
+Accomplishments:
+
+\begin{itemize}
+\tightlist
+\item
+  Designed and developed 4 core components in VPP architecture
+\item
+  Was responsible to build the concept and develop the solution for
+  redundancy in the VPP project, a system that has a SLA of
+  https://uptime.is/99.999
+\end{itemize}
+
+Technology summary:
+
+\begin{itemize}
+\tightlist
+\item
+  Programming languages: Scala, Java, Python, JavaScript, Ruby
+\item
+  Libraries: Play, Rails, Akka, Slick, Cats, Monix
+\item
+  Software: Apache Hadoop, Apache Kafka, PostgreSQL, MongoDB, OpenTSDB,
+  Cassandra, Linux
+\end{itemize}
+
+\hypertarget{python-developer-contract}{%
+\subsubsection{Python Developer
+(contract)}\label{python-developer-contract}}
+
+\emph{INRIA} January 2013 - July 2013, Rennes, France
+
+Working on the ConPAAS project for my master thesis
+
+\begin{itemize}
+\tightlist
+\item
+  finished adding the capability for starting services and nodes on
+  multiple cloud providers at once
+\item
+  fault recovery system that can cope with entire cloud failures
+\item
+  currently adding the authentication and authorization service for
+  users of the IaaS manager
+\end{itemize}
+
+\hypertarget{java-developer-contract}{%
+\subsubsection{Java Developer
+(contract)}\label{java-developer-contract}}
+
+\emph{GSOC} May 2012 - September 2012
+
+working on Apache James Mailbox creating a distributed index over HBase
+using Lucene
+
+\hypertarget{java-developer}{%
+\subsubsection{Java Developer}\label{java-developer}}
+
+\emph{1\&1 Internet AG} June 2011 - April 2012
+
+Internal Development team working on internal products to help company
+employees
+
+\hypertarget{full-stackjava-js-developer}{%
+\subsubsection{Full stack(Java + JS)
+Developer}\label{full-stackjava-js-developer}}
+
+\emph{Betbrain} November 2009 - May 2011
+
+\begin{itemize}
+\tightlist
+\item
+  Developing and maintaining company's software application(J2SE) and
+  databases(MySQL) also worked on Struts framework and Javascript.
+\item
+  Developed cross domain and custom RPC solutions, integration with
+  existing platforms,
+\item
+  Application testing and writing software documentation,
+\item
+  Offering support to users of the company's site, and maintaining
+  existing applications.
+\end{itemize}
+
+\hypertarget{education}{%
+\subsubsection{Education}\label{education}}
+
+M.S., Computer Science, Vrije Universiteit Amsterdam, Parallel and
+Distributed Computing Systems 2012 - 2013, Amsterdam Netherlands
+
+\begin{itemize}
+\tightlist
+\item
+  Diploma dissertation: Contrail PAAS - Multi-datacenter distributed
+  application hosting and monitoring
+\end{itemize}
+
+Bachelor, Computer Science, University POLITEHNICA of Bucharest,
+2004-2009, Bucharest, Romania
 
 \end{resume}
 
